@@ -4,7 +4,7 @@
 
 ​	Cetus 网络架构图如下所示：
 
-![Cetus 架构图](https://github.com/liuyanlei25/doc/blob/master/%E5%9B%BE%E7%89%87/Cetus%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![Cetus 架构图](https://github.com/liuyanlei25/doc/blob/master/picture/Cetus_framwork.png)
 
 ​	Cetus 位于应用程序与MySQL数据库之间，作为前端应用与数据库的通讯。其中，前端应用连接 LVS 节点，LVS 节点映射端口到多个Cetus 服务，后者通过自身的连接池连接到后端的数据库。
 
@@ -21,12 +21,7 @@
 
 ​	功能模块间的交互关系如下：
 
-<div align=center>
-<img src="./picture/Cetus 功能模块关系图.png" width="50%" height="50%">
-</div>
-<div align=center>
-<center> 图2 Cetus 功能模块关系图 </center>
-</div>
+![Cetus 功能模块关系图](https://github.com/liuyanlei25/doc/blob/master/picture/Cetus_module.png)
 
 ​	其中，SQL解析模块为后续读写分离和数据分片等功能解析出SQL类型、表名和查询条件等关键信息；连接池模块是自维护连接池，支持Cetus根据需求查询和检测后端，维护连接数，具有高效连接共享性、事务与Prepare的前后端绑定功能和热点连接重用与连接等待机制；管理功能模块通过用户在管理界面输入，独立认证并转到下一状态，给用户回复状态查询结果或调整参数。
 
@@ -35,12 +30,7 @@
 
 ​	Cetus 整体工作流程图如下：
 
-<div align=center>
-<img src="./picture/Cetus 数据流图.png" width="50%" height="50%">
-</div>
-<div align=center>
-<center> 图3 Cetus 整体工作流程图 </center>
-</div>
+![Cetus 整体工作流程图](https://github.com/liuyanlei25/doc/blob/master/picture/Cetus_dataflow.png)
 
 ​	其整体工作流程如下所述：
 

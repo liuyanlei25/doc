@@ -4,12 +4,7 @@
 
 ​	Cetus 网络架构图如下所示：
 
-<div align=center>
-<img src="./picture/Cetus 架构图.png" width="50%" height="50%">
-</div>
-<div align=center>
-<center> 图1 Cetus 网络架构图 </center>
-</div>
+![Cetus 架构图](https://github.com/liuyanlei25/doc/blob/master/%E5%9B%BE%E7%89%87/Cetus%20%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 ​	Cetus 位于应用程序与MySQL数据库之间，作为前端应用与数据库的通讯。其中，前端应用连接 LVS 节点，LVS 节点映射端口到多个Cetus 服务，后者通过自身的连接池连接到后端的数据库。
 
